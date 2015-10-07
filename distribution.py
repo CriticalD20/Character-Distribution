@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: James Napier
-Credit: <list sources used, if any>
+Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914
 
 Assignment:
 
