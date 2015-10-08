@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: James Napier
-Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914
+Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914, http://stackoverflow.com/questions/963161/python-display-string-multiple-times
 
 Assignment:
 
@@ -42,7 +42,10 @@ stringCD=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+stringCD+'" is: ')
 
 ChDis=stringCD.lower()
-
-
-
-print(string.ascii_lowercase())
+#letters=list(x for x in string.ascii_letters)
+letlist=list(string.ascii_lowercase)
+count=(x for x in letlist)
+for x in letlist:
+    mylist=((x)*ChDis.count(x))
+    print(mylist)
+        
