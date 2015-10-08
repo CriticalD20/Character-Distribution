@@ -46,11 +46,11 @@ ChDis=stringCD.lower()
 letlist=list(string.ascii_lowercase)
 count=(x for x in letlist)
 
-#mylist = [(x)*ChDis.count(x) for x in letlist]
-
-mylist = []
-for x in letlist:
-    mylist.append((x)*ChDis.count(x))
+mylist = [(x)*ChDis.count(x) for x in letlist]
+print(mylist)
+#mylist = []
+#for x in letlist:
+    #mylist.append((x)*ChDis.count(x))
 
 print(mylist)
     
