@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: James Napier
-Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914, http://stackoverflow.com/questions/963161/python-display-string-multiple-times
+Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914, http://stackoverflow.com/questions/963161/python-display-string-multiple-times, https://docs.python.org/3/howto/sorting.html, http://stackoverflow.com/questions/4800811/accessing-a-value-in-a-tuple-that-is-in-a-list
 
 Assignment:
 
@@ -47,11 +47,21 @@ letlist=list(string.ascii_lowercase)
 count=(x for x in letlist)
 
 mylist = [(x)*ChDis.count(x) for x in letlist]
-print(mylist)
+mylistcount=[ChDis.count(x) for x in letlist]
+
+MLLC=zip(mylistcount, mylist)
+MLLCr=sorted(MLLC, reverse=True)
+
+
+if int([x[0]for x in MLLCr])>0:
+    print(int([x[0]for x in MLLCr])+1) 
+    #errors in two lines above. Not sure what is wrong
+else:
+    print("Lol")
 #mylist = []
 #for x in letlist:
     #mylist.append((x)*ChDis.count(x))
 
-print(mylist)
+
     
         
