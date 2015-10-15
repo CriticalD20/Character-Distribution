@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: James Napier
-Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914, http://stackoverflow.com/questions/963161/python-display-string-multiple-times, https://docs.python.org/3/howto/sorting.html, http://stackoverflow.com/questions/4800811/accessing-a-value-in-a-tuple-that-is-in-a-list
+Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914, http://stackoverflow.com/questions/963161/python-display-string-multiple-times, https://docs.python.org/3/howto/sorting.html, http://stackoverflow.com/questions/4800811/accessing-a-value-in-a-tuple-that-is-in-a-list,
 
 Assignment:
 
@@ -36,7 +36,7 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-import string
+import string, random
 
 stringCD=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+stringCD+'" is: ')
@@ -52,16 +52,20 @@ mylistcount=[ChDis.count(x) for x in letlist]
 MLLC=zip(mylistcount, mylist)
 MLLCr=sorted(MLLC, reverse=True)
 
-
-if int([x[0]for x in MLLCr])>0:
-    print(int([x[0]for x in MLLCr])+1) 
+#for x in MLLCr:
+    #if x[0]>0:
+       # print(x[1])
+#if ([x[0] for x in MLLCr])>0:
+    #print(int([x[]for x in MLLCr])+1) 
     #errors in two lines above. Not sure what is wrong
-else:
-    print("Lol")
+#else:
+    #print("Lol")
 #mylist = []
 #for x in letlist:
     #mylist.append((x)*ChDis.count(x))
 
+SortMLLCr=(x[0] for x in MLLCr)
 
+    
     
         
