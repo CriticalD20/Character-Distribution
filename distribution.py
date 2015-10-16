@@ -73,3 +73,7 @@ temp = sorted(MLLCr, key=operator.itemgetter(0), reverse=True)
 temp2 = sorted( temp, key=operator.itemgetter(1))
     
 print(sorted(temp2, key=operator.itemgetter(0), reverse=True))
+http://stackoverflow.com/questions/10695139/sort-a-list-of-tuples-by-2nd-item-integer-value
+http://stackoverflow.com/questions/13482313/sort-a-list-of-tuples-alphabetically-and-by-value
+https://docs.python.org/3.1/library/operator.html
+http://stackoverflow.com/questions/18595686/how-does-operator-itemgetter-and-sort-work-in-python
