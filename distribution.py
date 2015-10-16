@@ -36,7 +36,7 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-import string, random
+import string, random, operator
 
 stringCD=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+stringCD+'" is: ')
@@ -67,9 +67,9 @@ MLLCr=sorted(MLLC, reverse=True)
 #SortMLLCr=(x[0] for x in MLLCr)
 #print(SortMLLCr)
 #print(sorted(MLLCr, key=lambda x:(x[0],-x[1])))
-for x in MLLCr:
-    temp = sorted(MLLCr, itemgetter(x[1]))
 
-    print(sorted(temp, itemgetter(x[0]), reverse=True))
+temp = sorted(MLLCr, key=operator.itemgetter(0), reverse=True)
+
+temp2 = sorted( temp, key=operator.itemgetter(1))
     
-        
+print(sorted(temp2, key=operator.itemgetter(0), reverse=True))
