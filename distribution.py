@@ -64,8 +64,12 @@ MLLCr=sorted(MLLC, reverse=True)
 #for x in letlist:
     #mylist.append((x)*ChDis.count(x))
 
-SortMLLCr=(x[0] for x in MLLCr)
+#SortMLLCr=(x[0] for x in MLLCr)
+#print(SortMLLCr)
+#print(sorted(MLLCr, key=lambda x:(x[0],-x[1])))
+for x in MLLCr:
+    temp = sorted(MLLCr, itemgetter(x[1]))
 
-    
+    print(sorted(temp, itemgetter(x[0]), reverse=True))
     
         
