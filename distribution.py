@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: James Napier
-Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914, http://stackoverflow.com/questions/963161/python-display-string-multiple-times, https://docs.python.org/3/howto/sorting.html, http://stackoverflow.com/questions/4800811/accessing-a-value-in-a-tuple-that-is-in-a-list,http://stackoverflow.com/questions/10695139/sort-a-list-of-tuples-by-2nd-item-integer-value, http://stackoverflow.com/questions/13482313/sort-a-list-of-tuples-alphabetically-and-by-value, https://docs.python.org/3.1/library/operator.html, http://stackoverflow.com/questions/18595686/how-does-operator-itemgetter-and-sort-work-in-python
+Credit: http://stackoverflow.com/questions/27052625/python-variable-scope-and-parameters-issue/27065914#27065914, http://stackoverflow.com/questions/963161/python-display-string-multiple-times, https://docs.python.org/3/howto/sorting.html, http://stackoverflow.com/questions/4800811/accessing-a-value-in-a-tuple-that-is-in-a-list,http://stackoverflow.com/questions/10695139/sort-a-list-of-tuples-by-2nd-item-integer-value, http://stackoverflow.com/questions/13482313/sort-a-list-of-tuples-alphabetically-and-by-value, https://docs.python.org/3.1/library/operator.html, http://stackoverflow.com/questions/18595686/how-does-operator-itemgetter-and-sort-work-in-python, http://stackoverflow.com/questions/991350/counting-repeated-characters-in-a-string-in-python
 
 Assignment:
 
@@ -51,7 +51,7 @@ for x in letlist:
     count = stringCD.count(x)
     if count > 0:
         needsort=(x)*count
-        
+        http://stackoverflow.com/questions/991350/counting-repeated-characters-in-a-string-in-python
 #print(sorted(mylist))
 
 
