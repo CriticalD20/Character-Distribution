@@ -36,7 +36,7 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-import string, random, operator
+import string
 
 stringCD=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+stringCD+'" is: ')
@@ -44,44 +44,13 @@ print('The distribution of characters in "'+stringCD+'" is: ')
 ChDis=stringCD.lower()
 #letters=list(x for x in string.ascii_letters)
 letlist=list(string.ascii_lowercase)
-counting=[]
 count=(x for x in letlist)
 mylistcount=[ChDis.count(x) for x in letlist]
 mylist = [(x)*ChDis.count(x) for x in letlist]
-#print(counting.append(x*ChDis.count(x)) for x in letlist)
+
 inputs=("+stringCD+")
 z=len(inputs)
 for x in range(int(z), 0, -1):
     for e in mylist:
         if len(e) == x:
             print(e)
-#print(sorted(mylist))
-
-
-####mylistcount=[ChDis.count(x) for x in letlist]
-
-####MLLC=zip(mylistcount, mylist)
-####MLLCr=sorted(MLLC, reverse=True)
-
-#for x in MLLCr:
-    #if x[0]>0:
-       # print(x[1])
-#if ([x[0] for x in MLLCr])>0:
-    #print(int([x[]for x in MLLCr])+1) 
-    #errors in two lines above. Not sure what is wrong
-#else:
-    #print("Lol")
-#mylist = []
-#for x in letlist:
-    #mylist.append((x)*ChDis.count(x))
-
-#SortMLLCr=(x[0] for x in MLLCr)
-#print(SortMLLCr)
-#print(sorted(MLLCr, key=lambda x:(x[0],-x[1])))
-
-####temp = sorted(MLLCr, key=operator.itemgetter(0), reverse=True)
-
-####temp2 = sorted( temp, key=operator.itemgetter(1))
-    
-####print(sorted(temp2, key=operator.itemgetter(0), reverse=True))
-#find a way to order the tuples by alphabetical order and still keep numerical order
