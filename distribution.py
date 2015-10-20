@@ -44,14 +44,17 @@ print('The distribution of characters in "'+stringCD+'" is: ')
 ChDis=stringCD.lower()
 #letters=list(x for x in string.ascii_letters)
 letlist=list(string.ascii_lowercase)
+counting=[]
 count=(x for x in letlist)
 mylistcount=[ChDis.count(x) for x in letlist]
 mylist = [(x)*ChDis.count(x) for x in letlist]
-for x in letlist:
-    count = stringCD.count(x)
-    if count > 0:
-        needsort=(x)*count
-        http://stackoverflow.com/questions/991350/counting-repeated-characters-in-a-string-in-python
+#print(counting.append(x*ChDis.count(x)) for x in letlist)
+inputs=("+stringCD+")
+z=len(inputs)
+for x in range(int(z), 0, -1):
+    for e in mylist:
+        if len(e) == x:
+            print(e)
 #print(sorted(mylist))
 
 
