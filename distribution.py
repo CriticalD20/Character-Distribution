@@ -40,14 +40,11 @@ import string
 
 stringCD=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+stringCD+'" is: ')
-
 ChDis=stringCD.lower()
-#letters=list(x for x in string.ascii_letters)
 letlist=list(string.ascii_lowercase)
 count=(x for x in letlist)
 mylistcount=[ChDis.count(x) for x in letlist]
 mylist = [(x)*ChDis.count(x) for x in letlist]
-
 inputs=("+stringCD+")
 z=len(inputs)
 for x in range(int(z), 0, -1):
